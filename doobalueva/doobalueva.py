@@ -57,7 +57,7 @@ group_id = requests.get(
 os.makedirs('Системный Блокъ')
 zip_archive = zipfile.ZipFile('result.zip', 'w')
 
-#Получаем список постов и делаем из них словарь, где ключ - id поста, а значение - текст поста
+#Получаем список постов 
 posts = requests.get(
     'https://api.vk.com/method/wall.get',
     params={
